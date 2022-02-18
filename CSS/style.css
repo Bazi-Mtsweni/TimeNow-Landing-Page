@@ -1,0 +1,36 @@
+/* Website Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* !Website Fonts */
+
+/* Default Styles */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background-color: var(--background-colour);
+    margin: auto;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+/* !Default Styles */
+
+/* Variables */
+
+:root{
+    --main-blue: #1d1b67;
+    --background-colour: #fff;
+    --text-colour: #425466;
+}
+
+/* !Variables */
+
