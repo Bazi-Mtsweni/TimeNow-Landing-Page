@@ -21,16 +21,3 @@ menuBtn.addEventListener("click", ()=>{
         active = false
     }
 })
-
-// menuBtn.addEventListener('click', () => {
-//     navList.classList.toggle('active');
-//     if (btnIcon.classList.contains('fa-bars')) {
-//         btnIcon.classList.remove('fa-bars');
-//         btnIcon.classList.add('fa-xmark');
-
-//     }
-//     else {
-//         btnIcon.classList.remove('fa-xmark');
-//         btnIcon.classList.add('fa-bars');
-//     }
-// });
