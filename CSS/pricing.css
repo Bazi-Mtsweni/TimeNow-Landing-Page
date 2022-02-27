@@ -47,6 +47,10 @@ a{
 .primary-btn:hover{
     background-color: #0c0b44;
 }
+hr{
+    width: 80%;
+    margin: 2rem auto;
+}
 .mb-1{
     margin-bottom: 1rem;
 }
@@ -81,9 +85,9 @@ a{
 /* Navigation */
 
 header{
-    height: 100vh;
     width: 100%;
     margin: auto;
+    margin-bottom: 2rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -106,6 +110,10 @@ header nav{
     background-color: transparent;
     height: 10vh;
     padding-top: 2rem;
+}
+header nav .nav-item.active{
+    font-weight: 700;
+    pointer-events: none;
 }
 header nav .left, header nav .left ul{
     display: flex;
@@ -134,6 +142,145 @@ header nav .left ul li a:hover{
 }
 
 /* !Navigation */
+
+/* Hero */
+
+.hero {
+    width: 80%;
+    margin: auto;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.hero p{
+    color: var(--text-colour);
+    width: 60%;
+    margin: auto;
+}
+.hero .bill-plan{
+    width: 40%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero .bill-plan p{
+    padding-top: 1rem;
+}
+    /* The switch - the box around the slider */
+    .switch-box input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    
+    .switch-box label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 80px;
+        height: 40px;
+        background: #2196F3;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+    
+    .switch-box label:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+    
+    .switch-box input:checked + label {
+        background: #2db928;
+    }
+    
+    .switch-box input:checked + label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+    
+    .switch-box label:active:after {
+        width: 60px;
+    }
+
+/* !Hero */
+
+section{
+    width: 100%;
+    position: relative;
+}
+
+section .container{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-row-gap: 20px !important;
+    grid-template-columns: repeat 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'price1 price2 price3';
+}
+section .container .price-card{
+    border: 1px solid var(--text-colour);
+    padding: 2rem;
+}
+section .container .price-card.price-1{
+    grid-area: price1;
+}
+section .container .price-card.price-2{
+    grid-area: price2;
+}
+section .container .price-card.price-3{
+    grid-area: price3;
+}
+section .container .price-card .price{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+section .container .price-card .price h2{
+    font-weight: 800;
+    font-size: 2rem;
+}
+section .container .price-card .price p{
+    color: var(--text-colour);
+    opacity: .6;
+    font-size: 1rem;
+    padding-bottom: .4rem;
+}
+section .container .price-card p{
+    color: var(--text-colour);
+    font-size: 1.1rem;
+}
+section .container .price-card .list-items{
+    position: relative;
+    border: solid;
+    width: 100%;
+}
+section .container .price-card .list-items .list-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+section .container .price-card .list-items .list-item ,.img-container{
+    width: 47%;
+    margin-right: 1rem;
+}
+section .container .price-card .list-items .list-item p{
+    border: solid;
+}
 
 /* Footer */
 
@@ -359,6 +506,8 @@ footer .nav-and-mail .mail .email input[type="email"]{
         color: var(--main-blue);
         background-color: var(--background-colour);
     }
+
+
     
     footer .nav-and-mail .navigation{
         width: 100%;
